@@ -1,6 +1,8 @@
 pipeline {
      agent any
-    
+     tools{
+         nodejs 'Node 22'
+     }
      
      stages {
          stage('Clone Repository') {
@@ -9,11 +11,11 @@ pipeline {
              }
          }
          
-         stage('Install Dependencies') {
-             steps {
-                 sh 'npm install'
-             }
-         }
+        //  stage('Install Dependencies') {
+        //      steps {
+        //          sh 'npm install'
+        //      }
+        //  }
              stage('Build')
             {
                 steps{
