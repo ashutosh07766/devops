@@ -1,8 +1,8 @@
 pipeline {
      agent any
-     tools{
-         nodejs 'Node 22'
-     }
+    //  tools{
+    //      nodejs 'Node 22'
+    //  }
      
      stages {
          stage('Clone Repository') {
