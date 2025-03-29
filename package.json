@@ -4,7 +4,9 @@
     "description": "A simple Node.js application",
     "main": "server.js",
     "scripts": {
-      "start": "node server.js"
+      "start": "node server.js",
+      "build":"echo"
+
     },
     "dependencies": {
       "express": "^4.18.2"
